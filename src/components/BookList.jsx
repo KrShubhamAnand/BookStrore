@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
 import BookCard from "./BookCard";
 
-const API_BASE = "http://skunkworks.ignitesol.com:8000/books";
+const API_BASE = "https://cors-anywhere.herokuapp.com/http://skunkworks.ignitesol.com:8000/books";
+
 
 export default function BookList({ genre, onBack }) {
   const [searchTerm, setSearchTerm] = useState("");
